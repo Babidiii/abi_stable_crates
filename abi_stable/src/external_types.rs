@@ -17,3 +17,7 @@ pub use self::parking_lot::{RMutex, ROnce, RRwLock};
 
 #[cfg(feature = "serde_json")]
 pub use self::serde_json::{RawValueBox, RawValueRef};
+
+#[cfg(feature = "flume")]
+#[cfg_attr(feature = "docsrs", doc(cfg(feature = "channels")))]
+pub mod flume;
